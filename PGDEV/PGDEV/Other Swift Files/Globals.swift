@@ -135,7 +135,7 @@ func checkRepAPIData() async {
     let apiURL = URL(string: "https://api.jsonbin.io/v3/b/65c02b82dc74654018a05265")!
     var request = URLRequest(url: apiURL)
     request.httpMethod = "GET"
-        request.allHTTPHeaderFields = ["X-Master-Key": "$2a$10$smQs8yKXKzsJrIcbs0VMt.QMqlC8l8/bReh.rqYxHmiKdrVZJ/6.."]
+        request.allHTTPHeaderFields = ["X-Master-Key": "This Was Removed For Privacy"]
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         if let data = data,
            let dataStr = String(data: data, encoding: .utf8) {
