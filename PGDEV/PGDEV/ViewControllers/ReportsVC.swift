@@ -41,7 +41,7 @@ class ReportsVC: UIViewController {
         }
         checkRepAPIGroup.notify(queue: .main) {
             Task {
-                try await putRepAPIData(with: "https://api.jsonbin.io/v3/b/65c02b82dc74654018a05265", headers: ["X-Master-Key": "$2a$10$smQs8yKXKzsJrIcbs0VMt.QMqlC8l8/bReh.rqYxHmiKdrVZJ/6.."])
+                try await putRepAPIData(with: "https://api.jsonbin.io/v3/b/65c02b82dc74654018a05265", headers: ["X-Master-Key": "This Was Removed For Privacy"])
             }
         }
         putRepAPIGroup.notify(queue: .main) {
