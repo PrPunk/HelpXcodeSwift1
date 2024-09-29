@@ -31,7 +31,7 @@ class LoadingScreenVC: UIViewController {
     func getAPIs() async {
         loadingGroup.enter()
         do {
-            try await fetchRepAPIData(with: "https://api.jsonbin.io/v3/b/65c02b82dc74654018a05265", headers: ["X-Master-Key": "$2a$10$smQs8yKXKzsJrIcbs0VMt.QMqlC8l8/bReh.rqYxHmiKdrVZJ/6.."])
+            try await fetchRepAPIData(with: "https://api.jsonbin.io/v3/b/65c02b82dc74654018a05265", headers: ["X-Master-Key": "This Was Removed For Privacy"])
             // Process the received data
         } catch {
             print("Error fetching data: \(error)")
